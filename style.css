@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -9,6 +12,7 @@ body {
  }
 .container {
     margin-bottom: 100px;
+    padding-top: 100px;
 }
 
 .color-bg {
@@ -124,4 +128,29 @@ input[placeholder] {
 .carousel-indicators li.active {
     width: 45px;
     background-image: linear-gradient(142deg, #ff589b 0%, #ff136f 100%);
+}
+
+
+.carousel-control-next, .carousel-control-prev {
+    position: absolute;
+    top: 40%;
+    bottom: 0;
+    z-index: 1;
+    -ms-display: flexbox;
+    display: flexbox;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 4%;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    opacity: .5;
+    transition: opacity .15s ease;
+}
+
+.navbar-light {
+    background-color: #ffffff;
+    border-radius: 27px;
 }
